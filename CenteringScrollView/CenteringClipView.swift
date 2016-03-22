@@ -23,7 +23,7 @@ final class CenteringClipView: NSClipView {
 			constrainedClipViewBounds.origin.x = floor((proposedBounds.width - documentViewFrame.width) / -2.0)
 		}
 
-		// If proposed clip view bounds is hight is greater than document view frame height, center it vertically.
+		// If proposed clip view bounds height is greater than document view frame height, center it vertically.
 		if documentViewFrame.height < proposedBounds.height {
 			constrainedClipViewBounds.origin.y = floor((proposedBounds.height - documentViewFrame.height) / -2.0)
 		}
